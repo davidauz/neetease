@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv_instructions"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_weight="2"
+        android:gravity="end"
+        android:paddingTop="20px"
+        android:text="@string/txt_instructions"/>
+
+
+    <EditText
+        android:textSize="18dp"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/et_source_path"
+        android:layout_below="@+id/tv_instructions"
+        android:layout_margin="10dp"
+        android:text=""/>
+
+    <EditText
+        android:textSize="18dp"
+        android:layout_width= "match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_source_path"
+        android:layout_marginTop="50dp"
+        android:id="@+id/et_dest_path"
+        android:layout_margin="10dp"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/do_stuff"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_dest_path"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:onClick="do_stuff"
+        android:text="@string/do_the_stuff"/>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onExit"
+        android:text="@string/exitBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/do_stuff"
+        />
+
+
+    <TextView
+        android:id="@+id/log_tw"
+        android:layout_below="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text=""/>
+
+
+</RelativeLayout>
