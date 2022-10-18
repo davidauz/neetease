@@ -1,2 +1,5 @@
 # neetease
-Decrypting music file download from the netease app
+
+Decrypting music file cached in the netease app ( https://music.163.com/ )
+
+
